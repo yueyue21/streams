@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 300px;
+      background-color: green;
+    }
+
+    .content {
+      margin-left: 300px;
+    }
+
+    .modal-body {
+      background-color: white;
+      margin: auto;
+      height: 30%;
+      width: 30%;
+      opacity: 1;
+    }
+
+    .modal {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-color: grey;
+      left: 0;
+      top: 0;
+      z-index: 10;
+      opacity: 0.5;
+    }
+
+    .positioned {
+      position: relative;
+      z-index: 0999;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="modal">
+    <div class="modal-body">
+      <h2>I am modal</h2>
+    </div>
+  </div>
+
+  <div class="sidebar">I am side bar</div>
+  <div class="content">
+    <h2>I am content</h2>
+  </div>
+</body>
+
+</html>
